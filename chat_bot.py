@@ -27,18 +27,22 @@ def search_wiki(person):
 def bot_reply(text):
     # text = input()
     response = ""
-    
+    if text == None:
+        return f"{get_emoji()}"
+
+
     if text != None:
         for i in text:
             if i in emoji.UNICODE_EMOJI:
                 response = response + f"{get_emoji()}"
     else:
         response = response + f"{get_emoji()}"
-    for i in text.split():
-        
-        if i.lower() in ["bye","leave","exit","quit",'bye','see you','goodbye','good bye','exit','leave','go','tata','see ya']:
+    if text != None:
+        for i in text.split():
             
-            return end_conv(i)
+            if i.lower() in ["bye","leave","exit","quit",'bye','see you','goodbye','good bye','exit','leave','go','tata','see ya']:
+                
+                return end_conv(i)
 
     response = response + greeting(text)
 
