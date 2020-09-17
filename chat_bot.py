@@ -28,7 +28,7 @@ def bot_reply(text):
     # text = input()
     response = ""
     
-    for i in text:
+    for i in text.split():
 
         if i in emoji.UNICODE_EMOJI:
             
