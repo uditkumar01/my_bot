@@ -28,11 +28,13 @@ def bot_reply(text):
     # text = input()
     response = ""
     
-    
-    for i in text:
-        if i in emoji.UNICODE_EMOJI:
+    if i != None:
+        for i in text:
+            if i in emoji.UNICODE_EMOJI:
             
-            response = response + f"{get_emoji(i)}"
+            response = response + f"{get_emoji()}"
+    else:
+        response = response + f"{get_emoji()}"
     for i in text.split():
         
         if i.lower() in ["bye","leave","exit","quit",'bye','see you','goodbye','good bye','exit','leave','go','tata','see ya']:
