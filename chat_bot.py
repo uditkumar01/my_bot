@@ -2,8 +2,27 @@ from utils import wake_up,greeting,getDate,getName,getTime,end_conv,get_emoji
 import wikipedia
 import datetime
 import emoji
+import random
 
+def search_wiki(person):
+    if "udit" in person.lower():
+        my_ans = ["Well, he is the one who made me","My best friend", "My bestie", "A Human, just kidding.","He is Me."]
+        return random.choice(my_ans)
+    elif "buddy" in person.lower():
+        my_ans = ["Its Me.","I am buddy, don't like teddy, but i still love candy. HA HA HA!!!","Your companion."]
+        return random.choice(my_ans)
+    elif "piyush" in person.lower():
+        my_ans = ["Busiest guy","One of my friend.","A human. Yeah i am serious.","A cool developer","Pro bunda"]
+        return random.choice(my_ans)
+    elif "abhi" in person.lower():
+        my_ans = ["Busiest guy","One of my friend.","A human. Yeah i am serious.","A cool developer","Pro bunda"]
+        return random.choice(my_ans)
+    else:
 
+        try:
+            return wikipedia.summary(f"{person}",sentences = 3)
+        except:
+            return "Sorry, right now server is busy."
 
 def bot_reply(text):
     # text = input()
@@ -39,7 +58,7 @@ def bot_reply(text):
         all_results = []
         for i in my_results:
             if person.lower() == i.lower():
-                return response + ' ' + wikipedia.summary(person,sentences = 3)
+                return response + ' ' + search_wiki(person)
             if "bill" in i.lower():
                 all_results.append(i)
         print("check1",all_results)
@@ -47,13 +66,13 @@ def bot_reply(text):
             return f"Which {person} you are talking about:    {'  ,'.join(all_results)}"
         
         # response = person
-        response = response + ' ' + wikipedia.summary(person,sentences = 3)
+        response = response + ' ' + search_wiki(person)
 
     if 'what is' in text.lower():
         words = text.split()
         person = " ".join(words[2:])
         # response = person
-        response = response + ' ' + wikipedia.summary(person,sentences = 3)
+        response = response + ' ' + search_wiki(person)
 
 
     return response
