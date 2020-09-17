@@ -1,77 +1,49 @@
-import json 
-import requests
+import logging
+import telegram
+from telegram.error import NetworkError, Unauthorized
+from time import sleep
 import os
-import time
 from chat_bot import bot_reply
 
-TOKEN = os.environ.get("BUDDY_BOT_TOKEN")
-URL = "https://api.telegram.org/bot{}/".format(TOKEN)
+
+update_id = None
 
 
-def check_updates(offset):
-    url = URL + "getUpdates"
-    if offset:
-        url += "?offset={}".format(offset)
-    js = get_json_from_url(url)
-    return js
-
-def get_last_update_id(updates):
-    update_ids = []
-    for update in updates["result"]:
-        update_ids.append(int(update["update_id"]))
-    return max(update_ids)
-
-def echo_all(updates):
-    for update in updates["result"]:
-        try:
-            text = update["message"]["text"]
-            chat = update["message"]["chat"]["id"]
-            send_message(text, chat)
-        except Exception as e:
-            print(e)
-
-def get_url(url):
-    response = requests.get(url)
-    content = response.content.decode("utf8")
-    return content
-
-
-def get_json_from_url(url):
-    content = get_url(url)
-    js = json.loads(content)
-    return js
-
-
-def get_updates():
-    url = URL + "getUpdates"
-    js = get_json_from_url(url)
-    return js
-
-
-def get_last_chat_id_and_text(updates):
-    num_updates = len(updates["result"])
-    last_update = num_updates - 1
-    text = updates["result"][last_update]["message"]["text"]
-    chat_id = updates["result"][last_update]["message"]["chat"]["id"]
-    return (text, chat_id)
-
-
-def send_message(text, chat_id):
-    
-    reply = bot_reply(text)
-    print(text,reply)
-    url = URL + "sendMessage?text={}&chat_id={}".format(reply, chat_id)
-    get_url(url)
-    
 def main():
-    last_update_id = None
+    global update_id
+    # Telegram Bot Authorization Token
+    bot = telegram.Bot(os.environ.get("BUDDY_BOT_TOKEN"))
+
+    # get the first pending update_id, this is so we can skip over it in case
+    # we get an "Unauthorized" exception.
+    try:
+        update_id = bot.get_updates()[0].update_id
+    except IndexError:
+        update_id = None
+
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
     while True:
-        print(last_update_id)
-        updates = check_updates(last_update_id)
-        if len(updates["result"]) > 0:
-            last_update_id = get_last_update_id(updates) + 1
-            echo_all(updates)
-        time.sleep(1)
+        try:
+            echo(bot)
+        except NetworkError:
+            sleep(1)
+        except Unauthorized:
+            # The user has removed or blocked the bot.
+            update_id += 1
+
+
+def echo(bot):
+    """Echo the message the user sent."""
+    global update_id
+    # Request updates after the last update_id
+    for update in bot.get_updates(offset=update_id, timeout=10):
+        update_id = update.update_id + 1
+
+        if update.message:  # your bot can receive updates without messages
+            # Reply to the message
+            reply = bot_reply(update.message.text)
+            update.message.reply_text(reply)
 
 
 if __name__ == '__main__':
