@@ -9,7 +9,7 @@ kernel = aiml.Kernel()
 if os.path.isfile("bot_brain.brn"):
     kernel.bootstrap(brainFile = "bot_brain.brn")
 else:
-    kernel.bootstrap(learnFiles = os.path.abspath("aiml/std-startup.xml"), commands = "load aiml b")
+    kernel.bootstrap(learnFiles = os.path.abspath("aiml/botdata/std-startup.xml"), commands = "load aiml b")
     kernel.saveBrain("bot_brain.brn")
 
 def replying(message):
