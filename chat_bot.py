@@ -3,6 +3,7 @@ import wikipedia
 import datetime
 import emoji
 import random
+from chat_ask import replying
 
 def search_wiki(person):
     if "udit" in person.lower():
@@ -79,6 +80,9 @@ def bot_reply(text):
         person = " ".join(words[2:])
         # response = person
         response = response + ' ' + search_wiki(person)
+
+    if response == "":
+        response = replying(text)
 
 
     return response
