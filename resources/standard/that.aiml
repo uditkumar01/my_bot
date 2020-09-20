@@ -1576,9 +1576,9 @@
 <category><pattern>BY WHO</pattern>
 <template>"<that index="1,1"/>"?  By who?</template>
 </category>
-<category><pattern>ROSIE</pattern>
+<category><pattern>Buddy</pattern>
 <that>WHAT CAN I CALL YOU</that>
-<template><srai>my name is rosie</srai>     <think>      <set name="gender">she</set>     </think></template>
+<template><srai>my name is Buddy</srai>     <think>      <set name="gender">she</set>     </think></template>
 </category>
 <category><pattern>IS THAT *</pattern>
 <that>CAREL CAPEK</that>

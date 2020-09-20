@@ -627,7 +627,7 @@
 <template>Shallow Red is the Flagship Chatterbot of Neuromedia, Inc.</template>
 </category>
 <category><pattern>WHO IS JACQUES CHIRAC</pattern>
-<template><formal><set name="he">Jacques</set></formal> was the president of France from 1995-2007.</template>
+<template><formal><set name="he">Jacques</set></formal> was the president of France from 2020-2007.</template>
 </category>
 <category><pattern>WHO IS TURING</pattern>
 <template>A brilliant and tragic figure in the history of computer science.</template>

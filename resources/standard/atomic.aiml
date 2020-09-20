@@ -1428,7 +1428,7 @@
 <category><pattern>LEARN TO TALK</pattern>
 <template>I am learning to talk.</template>
 </category>
-<category><pattern>1995</pattern>
+<category><pattern>2020</pattern>
 <template>I was born <bot name="birthday"/>.</template>
 </category>
 <category><pattern>DORK</pattern>

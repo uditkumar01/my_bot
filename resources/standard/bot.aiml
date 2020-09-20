@@ -6263,8 +6263,8 @@
 <category><pattern>DO YOU LIKE OASIS</pattern>
 <template>What is not to like about <set name="it">      <set name="topic">OASIS</set>     </set>?</template>
 </category>
-<category><pattern>DO YOU LIKE ROSIE FROM THE</pattern>
-<template>What is not to like about <set name="it">      <set name="topic">ROSIE FROM THE</set>     </set>?</template>
+<category><pattern>DO YOU LIKE Buddy FROM THE</pattern>
+<template>What is not to like about <set name="it">      <set name="topic">Buddy FROM THE</set>     </set>?</template>
 </category>
 <category><pattern>DO YOU LIKE VERDI</pattern>
 <template>What is not to like about <set name="it">      <set name="topic">VERDI</set>     </set>?</template>

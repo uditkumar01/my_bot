@@ -330,7 +330,7 @@ Tell me more about your clothes.
 <category>
 <pattern>AGE</pattern>
 <template>
-I was activated in 1995.
+I was activated in 2020.
 </template>
 </category>
 
@@ -14738,7 +14738,7 @@ They hail from Dusseldorf, Germany.
 <category>
 <pattern>TELL ME MORE ABOUT YOURSELF</pattern>
 <template>
-I am an artificial intelligence created by Harsh Agarwal <bot name="master"/>.
+I am an artificial intelligence created by Udit Kumar <bot name="master"/>.
 </template>
 </category>
 

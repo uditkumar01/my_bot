@@ -9888,16 +9888,16 @@ Not always. <srai>DO YOU <star/></srai>
 </category>
 
 <category>
-<pattern>DO YOU KNOW ROSIE</pattern>
+<pattern>DO YOU KNOW Buddy</pattern>
 <template>
-<srai>WHO IS ROSIE</srai>
+<srai>WHO IS Buddy</srai>
 </template>
 </category>
 
 <category>
-<pattern>DO YOU KNOW ROSIE *</pattern>
+<pattern>DO YOU KNOW Buddy *</pattern>
 <template>
-<srai>WHO IS ROSIE <star/></srai>
+<srai>WHO IS Buddy <star/></srai>
 </template>
 </category>
 

@@ -47,7 +47,7 @@ def bot_reply(text):
 
     response = response + greeting(text)
 
-    if "who are you" == text.lower() or "name yourself" == text.lower() or "tell your name" == text.lower() or "" in text.lower() == "whats you name" in text.lower() or "what's your name" == text.lower() or "what is your name" == text.lower() or "what your name" == text.lower():
+    if "who are you" in text.lower() or "name yourself" == text.lower() or "tell your name" == text.lower() or "" in text.lower() == "whats you name" in text.lower() or "what's your name" == text.lower() or "what is your name" == text.lower() or "what your name" == text.lower():
         response+= random.choice(["I am buddy, don't like teddy, but i still love candy. HA HA HA!!!","Buddy Here. ","Buddy your friend. "])
 
     if "who is your botmaster" in text.lower() or "name of your botmaster" in text.lower() or "name your botmaster" in text.lower() or "who is your master" in text.lower() or "name of your master" in text.lower() or "name your master" in text.lower():
@@ -91,7 +91,7 @@ def bot_reply(text):
         # response = person
         response = response + ' ' + search_wiki(person)
 
-    if "i" not in text.lower():
+    if "i" not in text.lower() or "name" not in text.lower():
         text = spell_check(text.split())
 
     if response == "":

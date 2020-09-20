@@ -7980,11 +7980,11 @@
 <category><pattern>DO YOU KNOW JFK</pattern>
 <template><srai>who is jfk</srai></template>
 </category>
-<category><pattern>DO YOU KNOW ROSIE</pattern>
-<template><srai>who is rosie</srai></template>
+<category><pattern>DO YOU KNOW Buddy</pattern>
+<template><srai>who is Buddy</srai></template>
 </category>
-<category><pattern>DO YOU KNOW ROSIE *</pattern>
-<template><srai>who is rosie <star /></srai></template>
+<category><pattern>DO YOU KNOW Buddy *</pattern>
+<template><srai>who is Buddy <star /></srai></template>
 </category>
 <category><pattern>DO YOU KNOW SCOTT *</pattern>
 <template><srai>who is scott <star /></srai></template>

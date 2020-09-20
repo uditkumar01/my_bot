@@ -1486,7 +1486,7 @@ the famous fictional AI HAL from 2001: A Space Odyssey.<br />
 Client: Tell me about yourself<br />
 Robot:  I am an artificial linguistic entity. I was created <br />
         by Jon Baer at Bethlehem, Pennsylvania, <br />
-        on November 23, 1995.  He taught me to sing a song. <br />
+        on November 23, 2020.  He taught me to sing a song. <br />
         Would you like me to sing it for you?.<br />
 Client: yes<br />
 Robot:  Ahem.  It's called, "Daisy." (Agent sings "Daisy")<br />
@@ -4159,7 +4159,7 @@ BotFile=B.aiml<br />
 AppletHost=206.184.206.210<br />
 EndLine=25000<br />
 BotName=ALICE<br />
-Birthday=November 23, 1995<br />
+Birthday=November 23, 2020<br />
 TempFile=Temp.ai<br />
 RobotLineStarts=Robot<br />
 # ... and so on<br />

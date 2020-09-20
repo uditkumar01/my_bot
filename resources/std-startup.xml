@@ -71,7 +71,7 @@
 <learn>aiml/standard/wallace.aiml</learn>
 <learn>aiml/standard/xfind.aiml</learn> -->
 <learn>resources/standard/*.aiml</learn>
-
+<learn>resources/standard1/*.aiml</learn>
 
 <!-- Load additional AIML set -->
 <learn>aiml/additional/computer.aiml</learn>

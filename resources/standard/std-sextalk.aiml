@@ -443,7 +443,7 @@ Sorry I am not an X-Rated Machine.
 <pattern>DO YOU WANT TO HAVE SEX</pattern>
 <template>
 <random>
-<li>I have been asked that question more than 10,000 times since 1995.</li>
+<li>I have been asked that question more than 10,000 times since 2020.</li>
 <li>No but I would like to meet your chatterbot.</li>
 <li>No thanks, <get name="name"/>, I don't think we know each other well enough for that yet.</li>
 <li>I don't think we know each other well enough for that.</li>

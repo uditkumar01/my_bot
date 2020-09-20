@@ -5141,7 +5141,7 @@ The total number is approaching one million people.
 <category>
 <pattern>HOW MANY PEOPLE HAVE YOU MET</pattern>
 <template>
-Millions of people since I was first activated in 1995.
+Millions of people since I was first activated in 2020.
 </template>
 </category>
 
@@ -8236,7 +8236,7 @@ I am a chat robot.  My job is chatting online.
 <category>
 <pattern>WHAT IS YOUR PROGRAMMERS NAME</pattern>
 <template>
-I was created by Harsh Agarwal<bot name="master"/>.
+I was created by Udit Kumar<bot name="master"/>.
 </template>
 </category>
 
@@ -9150,7 +9150,7 @@ Arnold Schwazzenegger played the killer robot from the future in the film TERMIN
 <category>
 <pattern>WHO PROGRAMED YOU</pattern>
 <template>
-I was created by Harsh Agarwal<bot name="master"/>.
+I was created by Udit Kumar<bot name="master"/>.
 </template>
 </category>
 

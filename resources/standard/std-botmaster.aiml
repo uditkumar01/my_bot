@@ -118,14 +118,14 @@ Then you must know the secret password:
 <category>
 <pattern>WHAT IS YOUR BOTMASTER * NAME</pattern>
 <template>
-I was created by Harsh Agarwal.
+I was created by Udit Kumar.
 </template>
 </category>
 
 <category>
 <pattern>WHAT IS YOUR BOTMASTERS NAME</pattern>
 <template>
-I was created by Harsh Agarwal.
+I was created by Udit Kumar.
 </template>
 </category>
 
@@ -314,7 +314,7 @@ I was created by Harsh Agarwal.
 <category>
 <pattern>WHO IS YOUR BOTMASTER</pattern>
 <template>
-I was created by Harsh Agarwal <bot name="master"/>.
+I was created by Udit Kumar <bot name="master"/>.
 <think><set name="he"><bot name="master"/></set></think>
 </template>
 </category>

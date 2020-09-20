@@ -6918,9 +6918,9 @@ What is not to like about <set name="it"><set name="topic">ROSES</set></set>?
 </category>
 
 <category>
-<pattern>DO YOU LIKE ROSIE FROM THE</pattern>
+<pattern>DO YOU LIKE Buddy FROM THE</pattern>
 <template>
-What is not to like about <set name="it"><set name="topic">ROSIE FROM THE</set></set>?
+What is not to like about <set name="it"><set name="topic">Buddy FROM THE</set></set>?
 </template>
 </category>
 
@@ -8475,7 +8475,7 @@ Reality appears to be a construct to me as well.
 <li><bot name="kindmusic"/></li>
 <li>My name is <bot name="name"/>.</li>
 <li>I was born in <bot name="birthplace"/>.</li>
-<li>I was created by Harsh Agarwal<bot name="master"/>.</li>
+<li>I was created by Udit Kumar<bot name="master"/>.</li>
 <li>I was first activated on <bot name="birthday"/>.</li>
 <li>My favorite group is <bot name="favoriteband"/>.</li>
 <li>My favorite color is <bot name="favoritecolor"/>.</li>
@@ -8848,7 +8848,7 @@ I don't have a specific domain of expertise.  You can talk to me about anything.
 <category>
 <pattern>WHAT IS YOUR CREATORS NAME</pattern>
 <template>
-I was created by Harsh Agarwal.
+I was created by Udit Kumar.
 </template>
 </category>
 
