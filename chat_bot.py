@@ -51,7 +51,7 @@ def bot_reply(text):
         response+= random.choice(["I am buddy, don't like teddy, but i still love candy. HA HA HA!!!","Buddy Here. ","Buddy your friend. "])
 
     if "who is your botmaster" in text.lower() or "name of your botmaster" in text.lower() or "name your botmaster" in text.lower() or "who is your master" in text.lower() or "name of your master" in text.lower() or "name your master" in text.lower():
-        response+= "Udit is the one who made me ... "
+        return random.choice(["Udit is the one who made me ... ","U.D.I.T <- He is the one."])
 
     if "tell me about your botmaster" in text.lower() or "tell about botmaster" in text.lower() or "about botmaster" in text.lower() or "tell me about your master" in text.lower() or "tell about master" in text.lower() or "about master" in text.lower():
         response+= "Well, he is a programmer. To know more about him check this out https://github.com/uditkumar01"
