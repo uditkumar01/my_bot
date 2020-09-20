@@ -91,7 +91,8 @@ def bot_reply(text):
         # response = person
         response = response + ' ' + search_wiki(person)
 
-    text = spell_check(text.split())
+    if "i" not in text.lower():
+        text = spell_check(text.split())
 
     if response == "":
         response = replying(text)
