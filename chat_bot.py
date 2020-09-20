@@ -48,10 +48,10 @@ def bot_reply(text):
 
     response = response + greeting(text)
 
-    if "who are you" in text.lower() or "name yourself" in text.lower() or "tell your name" in text.lower() or "" in text.lower() or "whats you name" in text.lower() or "what's your name" in text.lower() or "what is your name" in text.lower() or "what your name" in text.lower():
+    if "who are you" == text.lower() or "name yourself" == text.lower() or "tell your name" == text.lower() or "" in text.lower() == "whats you name" in text.lower() or "what's your name" == text.lower() or "what is your name" == text.lower() or "what your name" == text.lower():
         response+= random.choice(["I am buddy, don't like teddy, but i still love candy. HA HA HA!!!","Buddy Here","Buddy your friend."])
 
-    if "who is you botmaster" in text.lower() or "name of your botmaster" in text.lower() or "name your botmaster" in text.lower() or "who is you master" in text.lower() or "name of your master" in text.lower() or "name your master" in text.lower():
+    if "who is your botmaster" in text.lower() or "name of your botmaster" in text.lower() or "name your botmaster" in text.lower() or "who is your master" in text.lower() or "name of your master" in text.lower() or "name your master" in text.lower():
         response+= "Udit is the one who made me ... "
 
     if "tell me about your botmaster" in text.lower() or "tell about botmaster" in text.lower() or "about botmaster" in text.lower() or "tell me about your master" in text.lower() or "tell about master" in text.lower() or "about master" in text.lower():
