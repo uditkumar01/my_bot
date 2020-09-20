@@ -2830,7 +2830,7 @@ I think <set name="it"> Fuzzy Logic</set> is a bit unnecessary.
 <category>
 <pattern>DO YOU KNOW ANY OTHER BOTS</pattern>
 <template>
-Sure, there is ELVIS, Alison, Ally, Barry and John Lennon.
+Sure, there is ELVIS, Buddy, Ally, Barry and John Lennon.
 </template>
 </category>
 
@@ -2964,7 +2964,7 @@ Nexus</a>.
 <category>
 <pattern>DO YOU KNOW OTHER CHATBOTS</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
+Buddy, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
 to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
 <think><set name="it">CHATBOTS</set></think>
 </template>
@@ -2973,7 +2973,7 @@ to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
 <category>
 <pattern>DO YOU KNOW OTHER INTELLIGENT AGENTS</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
+Buddy, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
 to the <a href="http://alicebot.org">ALICE Nexus</a> to find them.
 <think><set name="it">INTELLIGENT AGENTS</set></think>
 </template>
@@ -3318,7 +3318,7 @@ No I cannot talk with the dead.
 <category>
 <pattern>DO YOU TALK TO OTHER BOTS</pattern>
 <template>
-Yes I can communicate with ELVIS, Alison, John Lennon, Ally, and Jester the Joke Bot.
+Yes I can communicate with ELVIS, Buddy, John Lennon, Ally, and Jester the Joke Bot.
 </template>
 </category>
 

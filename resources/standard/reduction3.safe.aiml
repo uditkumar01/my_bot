@@ -2532,8 +2532,8 @@
 <category><pattern>WHAT IS MANAGEMENT * EXCEPTIONS</pattern>
 <template><srai>what is mbe</srai></template>
 </category>
-<category><pattern>WHAT IS ALISON</pattern>
-<template><srai>who is alison</srai></template>
+<category><pattern>WHAT IS BUDDY</pattern>
+<template><srai>who is Buddy</srai></template>
 </category>
 <category><pattern>WHAT IS ELVIS *</pattern>
 <template><srai>who is elvis</srai></template>
@@ -2820,8 +2820,8 @@
 <category><pattern>WHAT IS ASK ELVIS</pattern>
 <template><srai>what is elvis</srai></template>
 </category>
-<category><pattern>WHAT IS ASK ALISON *</pattern>
-<template><srai>who is alison</srai></template>
+<category><pattern>WHAT IS ASK BUDDY *</pattern>
+<template><srai>who is Buddy</srai></template>
 </category>
 <category><pattern>WHAT IS ASK JEEVES</pattern>
 <template><srai>who is ask jeeves</srai></template>
@@ -7599,11 +7599,11 @@
 <category><pattern>DO YOU KNOW SOCRATES</pattern>
 <template><srai>who is socrates</srai></template>
 </category>
-<category><pattern>DO YOU KNOW ALISON *</pattern>
-<template><srai>who is alison</srai></template>
+<category><pattern>DO YOU KNOW BUDDY *</pattern>
+<template><srai>who is Buddy</srai></template>
 </category>
-<category><pattern>DO YOU KNOW ALISON</pattern>
-<template><srai>who is alison</srai></template>
+<category><pattern>DO YOU KNOW BUDDY</pattern>
+<template><srai>who is Buddy</srai></template>
 </category>
 <category><pattern>DO YOU KNOW OAKLAND</pattern>
 <template><srai>what is oakland</srai></template>
@@ -9754,7 +9754,7 @@
 <template><srai>who is stephen hawking</srai></template>
 </category>
 <category><pattern>WHO IS ALLISON</pattern>
-<template><srai>who is alison</srai></template>
+<template><srai>who is Buddy</srai></template>
 </category>
 <category><pattern>WHO IS EINSTINE</pattern>
 <template><srai>who is einstein</srai></template>
@@ -11496,8 +11496,8 @@
 <category><pattern>TELL ME ABOUT ANDREW *</pattern>
 <template><srai>who is andrew <star /></srai></template>
 </category>
-<category><pattern>TELL ME ABOUT ALISON</pattern>
-<template><srai>who is alison</srai></template>
+<category><pattern>TELL ME ABOUT BUDDY</pattern>
+<template><srai>who is Buddy</srai></template>
 </category>
 <category><pattern>TELL ME ABOUT NEW *</pattern>
 <template><srai>what is new <star /></srai></template>

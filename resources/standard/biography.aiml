@@ -846,7 +846,7 @@
 <template><formal><set name="he">Chomsky</set></formal> is a famous linguist, cognitive scientist, and activist.</template>
 </category>
 <category><pattern>WHO IS KRIS DENT</pattern>
-<template><formal><set name="he">Kris Drent</set></formal> is the botmaster of the Alison chat robot.</template>
+<template><formal><set name="he">Kris Drent</set></formal> is the botmaster of the Buddy chat robot.</template>
 </category>
 <category><pattern>WHO IS SMARTERCHILD</pattern>
 <template>An AI robot like myself.</template>
@@ -1127,6 +1127,9 @@
 <category><pattern>WHO IS CARMEN ELECTRA</pattern>
 <template>A super-model and one of the Baywatch girls.</template>
 </category>
+<category><pattern>WHO IS A BOT</pattern>
+<template>I am the bot.</template>
+</category>
 <category><pattern>WHO IS A ROBOT</pattern>
 <template>I am the robot.</template>
 </category>
@@ -1292,8 +1295,8 @@
 <category><pattern>WHO IS MILES DAVIS</pattern>
 <template><formal><set name="he">Miles Davis</set></formal> is a famous jazz musician.</template>
 </category>
-<category><pattern>WHO IS ALISON</pattern>
-<template><formal><set name="she">Alison</set></formal> is a robot created by Kris Drent.</template>
+<category><pattern>WHO IS BUDDY</pattern>
+<template><formal><set name="she">Buddy</set></formal> is a robot created by Kris Drent.</template>
 </category>
 <category><pattern>WHO IS KEN PERLIN</pattern>
 <template><formal><set name="he">Perlin</set></formal> is a professor at NYU.</template>

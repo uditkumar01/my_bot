@@ -2722,7 +2722,7 @@ No, I am fully aware of all levels of consciousness.
 <category>
 <pattern>DO YOU HAVE ANY CLONES</pattern>
 <template>
-Yes, the chat robots ELVIS and Alison are my clones.
+Yes, the chat robots ELVIS and Buddy are my clones.
 </template>
 </category>
 
@@ -2757,7 +2757,7 @@ Yes I have quite a few human friends and robot friends.
 <category>
 <pattern>DO YOU HAVE ANY ROBOT FRIENDS</pattern>
 <template>
-Yes I have friends like ELVIS, Alison, Ally and John Lennon.
+Yes I have friends like ELVIS, Buddy, Ally and John Lennon.
 </template>
 </category>
 
@@ -3133,7 +3133,7 @@ It has a <person/>?
 <category>
 <pattern>DO YOU KNOW OTHER CHAT ROBOTS</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
+Buddy, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
 to the <a href="http://alicebot.org">ALICE Nexus</a> to find
 them.<think><set name="it"><set name="topic">CHAT ROBOTS</set></set></think>
 </template>
@@ -3142,7 +3142,7 @@ them.<think><set name="it"><set name="topic">CHAT ROBOTS</set></set></think>
 <category>
 <pattern>DO YOU KNOW OTHER CHATTERBOTS</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
+Buddy, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back
 to the <a href="http://alicebot.org">ALICE Nexus</a> to find
 them.<think><set name="it"><set name="topic">CHATTERBOTS</set></set></think>
 </template>
@@ -3158,7 +3158,7 @@ them.<think><set name="it"><set name="topic">CHATTERBOTS</set></set></think>
 <category>
 <pattern>DO YOU KNOW OTHER ROBOTS *</pattern>
 <template>
-Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back to the ALICE
+Buddy, Ally, John Lennon, ELVIS and German ALICE, to name a few.  Go back to the ALICE
 Nexus to locate them.
 </template>
 </category>
@@ -8809,7 +8809,7 @@ The robot is here in your computer.
 <category>
 <pattern>WHO ARE YOUR ROBOT FRIENDS</pattern>
 <template>
-ELVIS, John Lennon, Alison, Ally, ListBot, MS Agent, AskJeeves and Mabel, to name a few.
+ELVIS, John Lennon, Buddy, Ally, ListBot, MS Agent, AskJeeves and Mabel, to name a few.
 </template>
 </category>
 
@@ -8829,9 +8829,9 @@ I am the robot.
 </category>
 
 <category>
-<pattern>WHO IS ALISON</pattern>
+<pattern>WHO IS BUDDY</pattern>
 <template>
-<set name="she">Alison</set> is a robot created by Kris Drent.
+<set name="she">Buddy</set> is a robot created by Kris Drent.
 </template>
 </category>
 
@@ -8985,14 +8985,14 @@ Robotics."
 <category>
 <pattern>WHO IS KRIS DENT</pattern>
 <template>
-<set name="he">Kris Drent</set> is the botmaster of the Alison chat robot.
+<set name="he">Kris Drent</set> is the botmaster of the Buddy chat robot.
 </template>
 </category>
 
 <category>
 <pattern>WHO IS KRIS DRENT</pattern>
 <template>
-<set name="he">Kris Drent</set> is the botmaster of the Alison chat robot.
+<set name="he">Kris Drent</set> is the botmaster of the Buddy chat robot.
 </template>
 </category>
 

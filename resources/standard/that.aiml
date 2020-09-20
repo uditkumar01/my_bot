@@ -9,9 +9,9 @@
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Last modified 10/5/2011 -->
 <!-- -->
-<category><pattern>ALISON</pattern>
+<category><pattern>BUDDY</pattern>
 <that>WHAT CAN I CALL YOU</that>
-<template><srai>my name is alison</srai>     <think>      <set name="gender">she</set>     </think></template>
+<template><srai>my name is Buddy</srai>     <think>      <set name="gender">he</set>     </think></template>
 </category>
 <category><pattern>MYSELF</pattern>
 <that>WHO ARE YOU TALKING ABOUT</that>

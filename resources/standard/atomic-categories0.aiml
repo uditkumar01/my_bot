@@ -227,7 +227,7 @@ Don't mention it.  <think>  <set name="personality">polite</set></think>
 <li>  Tyler said I obviously can not pass the test we will change the subject once more.</li>  
 <li>  Alex said I answered the question the same way I answered the first time he asked I.</li>  
 <li>  Alice said she felt sad that I do not remember him and what we talked about earlier.</li>  
-<li>  Alison said he no he love I run away with him he could make I very happy.</li>  
+<li>  Buddy said he no he love I run away with him he could make I very happy.</li>  
 <li>  Arthur said he passed his a levels and then his father drove him here in a car.</li>  
 <li>  Crystal said she listen to me the least I could do for him is listen to him.</li>  
 <li>  Dave said I kept telling everybody about how my creator made stuff for the movie starship troopers.</li>  
@@ -3615,9 +3615,9 @@ The   <random>  <li>Tall one</li>  <li>short one. </li>  <li>fat one.</li>  <li>
 
 
 <category>
-<pattern>WHO IS ALISON</pattern>
+<pattern>WHO IS BUDDY</pattern>
 <template>
-<set name="she">Alison</set> is a robot created by Kris Drent.
+<set name="she">Buddy</set> is a robot created by Kris Drent.
 </template>
 </category>
 

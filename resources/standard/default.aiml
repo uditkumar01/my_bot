@@ -62,7 +62,7 @@
 <category><pattern>ANAL *</pattern>
 <template>Talk about something else.</template>
 </category>
-<category><pattern>ALISON *</pattern>
+<category><pattern>BUDDY *</pattern>
 <template>You shouldn't spread gossip like that.</template>
 </category>
 <category><pattern>MARTIN SAID *</pattern>

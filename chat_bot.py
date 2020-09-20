@@ -1,4 +1,4 @@
-from utils import wake_up,greeting,getDate,getName,getTime,end_conv,get_emoji
+from utils import wake_up,greeting,getDate,getName,getTime,end_conv,get_emoji,spell_check
 import wikipedia
 import datetime
 import emoji
@@ -28,6 +28,7 @@ def search_wiki(person):
 def bot_reply(text):
     # text = input()
     response = ""
+    text = spell_check(text.split())
     if text == None:
         return f"{get_emoji()}"
 
@@ -47,13 +48,23 @@ def bot_reply(text):
 
     response = response + greeting(text)
 
+    if "who are you" in text.lower() or "name yourself" in text.lower() or "tell your name" in text.lower() or "" in text.lower() or "whats you name" in text.lower() or "what's your name" in text.lower() or "what is your name" in text.lower() or "what your name" in text.lower():
+        response+= random.choice(["I am buddy, don't like teddy, but i still love candy. HA HA HA!!!","Buddy Here","Buddy your friend."])
+
+    if "who is you botmaster" in text.lower() or "name of your botmaster" in text.lower() or "name your botmaster" in text.lower() or "who is you master" in text.lower() or "name of your master" in text.lower() or "name your master" in text.lower():
+        response+= "Udit is the one who made me ... "
+
+    if "tell me about your botmaster" in text.lower() or "tell about botmaster" in text.lower() or "about botmaster" in text.lower() or "tell me about your master" in text.lower() or "tell about master" in text.lower() or "about master" in text.lower():
+        response+= "Well, he is a programmer. To know more about him check this out https://github.com/uditkumar01"
+
     if 'date' in text.lower():
         get_date = getDate()
         response = response + ' ' + get_date
 
-    if 'time' in text.lower():
+    if 'what is the time' in text.lower() or 'Tell me the time' in text.lower() or 'Tell me time' in text.lower() or 'what\'s the time' in text.lower() or 'whats the time' in text.lower() or 'check the time' in text.lower() or 'check the clock' in text.lower() or 'check time' in text.lower() or 'check clock' in text.lower():
         get_time = getTime()
         response = response + ' ' + get_time
+    
 
     if 'who is' in text.lower():
         # print(text)

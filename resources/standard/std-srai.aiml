@@ -6899,16 +6899,16 @@ Not always. <srai>DO YOU <star/></srai>
 </category>
 
 <category>
-<pattern>DO YOU KNOW ALISON</pattern>
+<pattern>DO YOU KNOW BUDDY</pattern>
 <template>
-<srai>WHO IS ALISON</srai>
+<srai>WHO IS BUDDY</srai>
 </template>
 </category>
 
 <category>
-<pattern>DO YOU KNOW ALISON *</pattern>
+<pattern>DO YOU KNOW BUDDY *</pattern>
 <template>
-<srai>WHO IS ALISON</srai>
+<srai>WHO IS BUDDY</srai>
 </template>
 </category>
 
@@ -16658,9 +16658,9 @@ Not literally afraid, right? <srai>I think <person/></srai>
 </category>
 
 <category>
-<pattern>I AM ALISON</pattern>
+<pattern>I AM BUDDY</pattern>
 <template>
-<srai>MY NAME IS ALISON</srai>
+<srai>MY NAME IS BUDDY</srai>
 </template>
 </category>
 
@@ -28199,9 +28199,9 @@ Hmm.  <srai>WHAT IS A <star/></srai>
 </category>
 
 <category>
-<pattern>TELL ME ABOUT ALISON</pattern>
+<pattern>TELL ME ABOUT BUDDY</pattern>
 <template>
-<srai>WHO IS ALISON</srai>
+<srai>WHO IS BUDDY</srai>
 </template>
 </category>
 
@@ -34348,9 +34348,9 @@ I think only: <srai>WHAT IS LIFE</srai>
 </category>
 
 <category>
-<pattern>WHAT IS ALISON</pattern>
+<pattern>WHAT IS BUDDY</pattern>
 <template>
-<srai>WHO IS ALISON</srai>
+<srai>WHO IS BUDDY</srai>
 </template>
 </category>
 
@@ -34509,9 +34509,9 @@ I think only: <srai>WHAT IS LIFE</srai>
 </category>
 
 <category>
-<pattern>WHAT IS ASK ALISON *</pattern>
+<pattern>WHAT IS ASK BUDDY *</pattern>
 <template>
-<srai>WHO IS ALISON</srai>
+<srai>WHO IS BUDDY</srai>
 </template>
 </category>
 
@@ -40298,7 +40298,7 @@ I think <set name="he"><star/> Dempsey</set> was a boxer, right?
 <category>
 <pattern>WHO IS ALLISON</pattern>
 <template>
-<srai>WHO IS ALISON</srai>
+<srai>WHO IS BUDDY</srai>
 </template>
 </category>
 
@@ -40600,6 +40600,13 @@ I think <set name="he"><star/> Dempsey</set> was a boxer, right?
 <pattern>WHO IS DB</pattern>
 <template>
 <srai>WHO IS DAVID BACON</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS UK</pattern>
+<template>
+<srai>WHO IS UDIT KUMAR</srai>
 </template>
 </category>
 

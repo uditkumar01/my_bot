@@ -8,10 +8,13 @@ import wikipedia
 import datetime
 # from playsound import playsound
 import pytz
+import autocorrect
 
 
 # ignoring warnings
 warnings.filterwarnings('ignore')
+
+spell = autocorrect.Speller(lang='en')
 
 # # recording audio and return it as a string
 # def record_audio():
@@ -132,6 +135,12 @@ def getName(text):
             return wordList[i+2] + ' ' + wordList[i+3]
         elif i+2 <= len(wordList) - 1 and wordList[i].lower() == 'who' and wordList[i] == 'is':
             return wordList[i+2]
+
+def spell_check(word_list):
+    # checked_list = []
+    for i in range(len(word_list)):
+        word_list[i] = spell(word_list[i])
+    return " ".join(word_list)
 
 # search for keywords
 # def wiki_search(text):

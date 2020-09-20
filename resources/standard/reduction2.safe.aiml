@@ -6453,8 +6453,8 @@
 <category><pattern>I AM JOSHUA</pattern>
 <template><srai>my name is joshua</srai></template>
 </category>
-<category><pattern>I AM ALISON</pattern>
-<template><srai>my name is alison</srai></template>
+<category><pattern>I AM BUDDY</pattern>
+<template><srai>my name is Buddy</srai></template>
 </category>
 <category><pattern>I AM SPANISH</pattern>
 <template><srai>I am from spain</srai></template>
