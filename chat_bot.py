@@ -28,7 +28,6 @@ def search_wiki(person):
 def bot_reply(text):
     # text = input()
     response = ""
-    text = spell_check(text.split())
     if text == None:
         return f"{get_emoji()}"
 
@@ -49,7 +48,7 @@ def bot_reply(text):
     response = response + greeting(text)
 
     if "who are you" == text.lower() or "name yourself" == text.lower() or "tell your name" == text.lower() or "" in text.lower() == "whats you name" in text.lower() or "what's your name" == text.lower() or "what is your name" == text.lower() or "what your name" == text.lower():
-        response+= random.choice(["I am buddy, don't like teddy, but i still love candy. HA HA HA!!!","Buddy Here","Buddy your friend."])
+        response+= random.choice(["I am buddy, don't like teddy, but i still love candy. HA HA HA!!!","Buddy Here. ","Buddy your friend. "])
 
     if "who is your botmaster" in text.lower() or "name of your botmaster" in text.lower() or "name your botmaster" in text.lower() or "who is your master" in text.lower() or "name of your master" in text.lower() or "name your master" in text.lower():
         response+= "Udit is the one who made me ... "
@@ -91,6 +90,8 @@ def bot_reply(text):
         person = " ".join(words[2:])
         # response = person
         response = response + ' ' + search_wiki(person)
+
+    text = spell_check(text.split())
 
     if response == "":
         response = replying(text)
