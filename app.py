@@ -1,10 +1,12 @@
+from chat_bot import bot_reply
 from time import sleep
 import os
-from chat_bot import bot_reply
+# from chat_bot import bot_reply
 
 import logging
 
 from telegram import Update
+import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 # Enable logging
@@ -16,7 +18,8 @@ logger = logging.getLogger(__name__)
 
 def echo(update: Update, context: CallbackContext) -> None:
     """Reply the user's message."""
-    update.message.reply_text(bot_reply(update.message.text))
+    print(update)
+    context.bot.send_message(chat_id=update.message.chat.id,text=bot_reply(update.message.text),reply_to_message_id=update.message.message_id)
 
 
 def main():
@@ -24,7 +27,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater(os.environ.get("BUDDY_BOT_TOKEN"), use_context=True)
+    updater = Updater("1299217256:AAEvZr48ixCv-Kt-zpvbPT2BRKhB4wt3uyM", use_context=True)
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
