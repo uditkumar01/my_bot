@@ -1,49 +1,44 @@
-import logging
-import telegram
-from telegram.error import NetworkError, Unauthorized
 from time import sleep
 import os
 from chat_bot import bot_reply
 
+import logging
 
-update_id = None
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+
+# Enable logging
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
+)
+
+logger = logging.getLogger(__name__)
+
+def echo(update: Update, context: CallbackContext) -> None:
+    """Reply the user's message."""
+    update.message.reply_text(bot_reply(update.message.text))
 
 
 def main():
-    global update_id
-    # Telegram Bot Authorization Token
-    bot = telegram.Bot(os.environ.get("BUDDY_BOT_TOKEN"))
+    """Start the bot."""
+    # Create the Updater and pass it your bot's token.
+    # Make sure to set use_context=True to use the new context based callbacks
+    # Post version 12 this will no longer be necessary
+    updater = Updater(os.environ.get("BUDDY_BOT_TOKEN"), use_context=True)
 
-    # get the first pending update_id, this is so we can skip over it in case
-    # we get an "Unauthorized" exception.
-    try:
-        update_id = bot.get_updates()[0].update_id
-    except IndexError:
-        update_id = None
+    # Get the dispatcher to register handlers
+    dispatcher = updater.dispatcher
 
-    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    # on noncommand i.e message - echo the message on Telegram
+    dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
 
-    while True:
-        try:
-            echo(bot)
-        except NetworkError:
-            sleep(1)
-        except Unauthorized:
-            # The user has removed or blocked the bot.
-            update_id += 1
+    # Start the Bot
+    updater.start_polling()
 
-
-def echo(bot):
-    """Echo the message the user sent."""
-    global update_id
-    # Request updates after the last update_id
-    for update in bot.get_updates(offset=update_id, timeout=10):
-        update_id = update.update_id + 1
-
-        if update.message:  # your bot can receive updates without messages
-            # Reply to the message
-            reply = bot_reply(update.message.text)
-            update.message.reply_text(reply)
+    # Run the bot until you press Ctrl-C or the process receives SIGINT,
+    # SIGTERM or SIGABRT. This should be used most of the time, since
+    # start_polling() is non-blocking and will stop the bot gracefully.
+    updater.idle()
 
 
 if __name__ == '__main__':
