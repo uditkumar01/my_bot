@@ -31,7 +31,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater("1299217256:AAFpj4GYr7_ZpP-J_lQRHlSmaDwMhjK-G_w", use_context=True)
+    updater = Updater(os.environ.get("BUDDY_BOT_TOKEN"), use_context=True)
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
